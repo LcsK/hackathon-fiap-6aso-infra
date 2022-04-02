@@ -34,7 +34,7 @@ variable "TFC_CONFIGURATION_VERSION_GIT_BRANCH" {
   default = ""
 }
 
-resource "google_sql_database" “database” {
+resource "google_sql_database" "database" {
 	name = "main-database"
 	instance = "${google_sql_database_instance.main.name}"
 	charset = "utf8"
